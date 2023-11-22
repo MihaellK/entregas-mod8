@@ -6,18 +6,6 @@ class ChatbotNode(Node):
     def __init__(self):
         super().__init__('chatbot_node')
 
-    def go_almox(self):
-        return "Indo para o almoxarifado!"
-        
-    def go_packaging(self):
-        return "Indo para o setor Packaging!"
-        
-    def return_almox(self):
-        return "Retornando ao almoxarifado!"
-        
-    def return_packaging(self):
-        return "Retornando ao setor Packaging!"
-
     def go_to(self, place=None):
         if (place):
             return f"Estou indo para {place}!"
